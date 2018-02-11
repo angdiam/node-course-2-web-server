@@ -169,7 +169,11 @@ app.get('/',(req,res) => {
 //CODED IS ADDED AT TEH TOP BECAUSE IT NEEDS TO BE PLACED BEFORE ANY GET METHODS
 
 
-
+app.get('/projects',(req,res) => {
+  res.render('projects.hbs',{
+    pageTitle: 'Projects'
+  })
+})
 
 //It is important to create a listener otherwise the app will never header
    //app.listen(3000);   //we are using localhost with port 3000 (5000) is another option

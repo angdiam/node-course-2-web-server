@@ -38,3 +38,19 @@ Therefore go to package.json and in scripts add a new line
 "start": "node server.js"   //heroku is looking for that start script to run our app
 if you type $npm start from your project folder this is similar to $node server.js
 $npm test  //will run tests but for the moment we have no tests set up
+
+
+git add .  // to add all files
+$git commit -m 'Setup start script and heroku port' //This is for the git in your pc
+For the github.com now
+$git push
+
+Then from inside the project folder
+$heroku create //this will create a new app in our heroku account and will also add another remote to the
+newly created heroku github address that was created for your app.
+This means that besides git push that we did earlier, now we need to push to that heroku github address
+$git push heroku
+under launching is the url that we can place in the browser to run our app this time via heroku
+here is a simpler way
+$heroku open  //opens up the app in the default browser.
+heroku created a unique url If you have a domain name you can link this to this url
